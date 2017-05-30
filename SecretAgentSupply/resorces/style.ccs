@@ -1,0 +1,167 @@
+/* this makes 1rem = 18px */
+
+html {
+  font-size: 18px;
+}
+
+/* header section */
+
+.header {
+  background-color: black;
+  color: white;
+  display: block;
+}
+
+/* this keeps the content inside of it from not getting
+ larger that 960, the margin: 0 auto makes it work
+  (idk why exactly)  */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* This targets every .container div that is inside of
+ a .header div (which happens to only be one) */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+}
+
+.header img {
+  height: 1rem;
+  padding-right: 0.5rem;
+}
+
+/* main section */
+
+.main-banner {
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+  display: block;
+}
+
+.headline {
+  background-color: black;
+  color: white;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+h1, h4 {
+  font-weight: bold;
+}
+
+.headline h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0px;
+}
+
+/* Nav bar */
+
+nav {
+background-color: firebrick;
+color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 0px;
+  list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Products */
+
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.product {
+ width: 30%;
+}
+
+/* Sizing the box the product goes in */
+
+.product-img {
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  max-width: 8em;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/* Bus Info */
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+/* footer */
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product.glasses {
+  display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+  width: 47%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+ ul li {
+ display: none;
+ }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+  display: block;
+  text-align: center;
+  }
+}
